@@ -1,6 +1,7 @@
 defmodule Home.MixProject do
   use Mix.Project
 
+  # this is the script for elixir that runs our cpp file
   def run(_args) do
     {result, _errcode} = System.cmd("g++",
       ["--std=c++11",
@@ -17,6 +18,7 @@ end
   def project do
     [
       app: :home,
+      description: "Simple bridge, elixir vs c++",
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
@@ -36,8 +38,7 @@ end
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+     # none
     ]
   end
 end
