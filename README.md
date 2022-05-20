@@ -31,7 +31,7 @@ g++ -O3 -fpic -shared -o nativly.so natifly.cpp
 ```
 ## Terminal 
 ```
-iex(1)> Nativly.benchmark
+iex(1)> Home.benchmark
 For N = 1000000:
 =============
 Elixir took 0.283104s
