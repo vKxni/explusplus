@@ -24,3 +24,8 @@ double dot(const vector<double> &a, const vector<double> &b)
     return result;
 }
 ```
+
+## Compile
+```
+g++ -O3 -fpic -shared -o nativly.so natifly.cpp
+```
