@@ -1,4 +1,4 @@
-# Elixir++ WIP
+# ExPlusPlus (Elixir++)
 A simple attempt to build a bridge between Elixir (mix) and C++.
 
 ## Vectors
@@ -28,4 +28,12 @@ double dot(const vector<double> &a, const vector<double> &b)
 ## Compile
 ```
 g++ -O3 -fpic -shared -o nativly.so natifly.cpp
+```
+## Terminal 
+```
+iex(1)> Nativly.benchmark
+For N = 1000000:
+=============
+Elixir took 0.283104s
+Native took 0.05946s
 ```
